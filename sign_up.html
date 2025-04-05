@@ -60,68 +60,139 @@
         <div class="flex flex-col justify-center items-center">
           <!-- text  -->
           <div>
-            <h2 class="text-2xl text-center font-bold">Sign In</h2>
+            <h2 class="text-2xl text-center font-bold">Sign Up</h2>
             <p class="text-sm text-center text-black">
-              Enter your native memo account details
+              Welcome to Native Memo - Let’s create account
             </p>
           </div>
-          <div class="flex flex-col justify-center my-10">
-            <!-- user name email  -->
+          <div class="flex gap-3 justify-center mt-8 mb-2">
+            <!-- first name  -->
             <div class="flex flex-col">
-              <label class="text-sm mb-2" for="sign">Username/Email</label>
-              <input
-                class="text-sm text-left py-2.5 px-4 w-96 bg-[#FFF] rounded-3xl border border-black"
-                type="email"
-                placeholder="Username/email"
-                id="sign"
-              />
-            </div>
-            <!-- password  -->
-            <div class="flex flex-col">
-              <label class="text-sm mt-5 mb-2" for="pass">Password</label>
-              <input
-                class="text-sm text-left py-2.5 px-4 w-96 bg-[#FFF] rounded-3xl border border-black"
-                type="password"
-                placeholder="Username/email"
-                id="pass"
-              />
-            </div>
-            <!-- forgot pass  -->
-            <div class="flex items-center justify-between">
-              <!-- Remember Me -->
-              <div class="flex items-center space-x-2 my-2">
-                <input
-                  type="checkbox"
-                  id="remember"
-                  class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring focus:ring-blue-500"
-                />
-                <label
-                  for="remember"
-                  class="text-sm text-gray-700 cursor-pointer"
-                  >Remember Me</label
-                >
-              </div>
-
-              <!-- Forgot Password -->
-              <a href="#" class="text-sm text-blue-600 hover:underline"
-                >Forgot Password?</a
+              <label class="text-sm mb-2 text-black" for="fname"
+                >First name</label
               >
+              <input
+                class="text-sm text-left py-2.5 px-4 bg-[#FFF] rounded-3xl border border-black"
+                type="text"
+                placeholder="First name"
+                id="fname"
+              />
+            </div>
+            <!-- last name  -->
+            <div class="flex flex-col">
+              <label class="text-sm mb-2 text-black" for="lname"
+                >Last name</label
+              >
+              <input
+                class="text-sm text-left py-2.5 px-4 bg-[#FFF] rounded-3xl border border-black"
+                type="text"
+                placeholder="Last name"
+                id="lname"
+              />
+            </div>
+          </div>
+          <!-- form for sign up  -->
+          <div>
+            <!-- username  -->
+            <div class="flex flex-col w-[390px]">
+              <label class="text-sm mb-2 text-black" for="username"
+                >Username</label
+              >
+              <input
+                class="text-sm text-left py-2.5 px-4 bg-[#FFF] rounded-3xl border border-black"
+                type="text"
+                placeholder="username"
+                id="username"
+              />
+            </div>
+            <!-- username end  -->
+            <!-- email  -->
+            <div class="flex flex-col w-[390px] mt-2">
+              <label class="text-sm mb-2 text-black" for="email"
+                >Email address</label
+              >
+              <input
+                class="text-sm text-left py-2.5 px-4 bg-[#FFF] rounded-3xl border border-black"
+                type="email"
+                placeholder="email"
+                id="email"
+              />
+            </div>
+            <!-- email end  -->
+            <!-- organization -->
+            <div class="flex flex-col w-[390px] mt-2">
+              <label class="text-sm mb-2 text-black" for="username"
+                >Organizations</label
+              >
+
+              <div class="relative">
+                <!-- Input field -->
+                <input
+                  class="text-sm text-left py-2.5 px-4 pr-10 bg-[#FFF] rounded-3xl border border-black w-full"
+                  type="text"
+                  placeholder="select an organization"
+                  id="username"
+                />
+
+                <!-- Right-side arrow icon -->
+                <div class="absolute inset-y-0 right-3 flex items-center">
+                  <i class="fa-solid fa-angle-down text-black text-sm"></i>
+                </div>
+              </div>
+            </div>
+            <!-- organization end  -->
+            <!-- password  -->
+            <div class="flex flex-col w-[390px] mt-2">
+              <label class="text-sm mb-2 text-black" for="password"
+                >Password</label
+              >
+              <input
+                class="text-sm text-left py-2.5 px-4 bg-[#FFF] rounded-3xl border border-black"
+                type="password"
+                placeholder="password"
+                id="password"
+              />
+            </div>
+            <!-- password end  -->
+            <!-- confirm password 
+               -->
+            <!-- confirm password end  -->
+            <div class="flex flex-col w-[390px] mt-2">
+              <label class="text-sm mb-2 text-black" for="cpassword"
+                >Confirm password</label
+              >
+              <input
+                class="text-sm text-left py-2.5 px-4 bg-[#FFF] rounded-3xl border border-black"
+                type="password"
+                placeholder="re-enter the password"
+                id="cpassword"
+              />
             </div>
           </div>
           <!-- sign up button  -->
           <div>
             <button
-              class="py-2.5 px-4 w-96 text-sm font-semibold bg-[#FFB845] rounded-3xl"
+              class="py-2.5 px-4 w-[390px] text-sm font-semibold bg-[#FFB845] rounded-3xl mt-5"
             >
-              Sign In
+              Sign Up
             </button>
           </div>
           <!-- did not have account  -->
-          <div class="text-center mt-8">
-            <p class="text-sm text-black font-semibold">
-              Didn't have an account?
+          <div class="text-center mt-4">
+            <p class="text-sm text-black font-semibold mb-2">
+              Already have account?
               <a href="#" class="text-blue-600 font-semibold hover:underline"
-                >Create Account</a
+                >Login</a
+              >
+            </p>
+            <p>
+              <span class="text-gray-400 text-medium"
+                >By creating an account, you agree to our</span
+              >
+              <span class="text-blue-500"
+                ><a class="text-blue hover:underline" href=""
+                  >terms of use.</a
+                ></span
               >
             </p>
           </div>
